@@ -1,0 +1,28 @@
+def IMC(P,A):
+    IMC = P / A ** 2
+    return IMC
+
+def bom_ou_ruim(IMC):
+    if IMC < 16:
+        print("Magreza Grau III")
+    elif 16 <= IMC <= 16.9:
+        print("Magreza Grau II")
+    elif 17 <= IMC <= 18.4:
+        print("Magreza Grau I")
+    elif 18.5 <= IMC <= 24.9:
+        print("Adequado")
+    elif 25 <= IMC <= 29.9:
+        print("Pré-Obeso")
+    elif 30 <= IMC <= 34.9:
+        print("Obesidade Grau I")
+    elif 35 <= IMC <= 39.9:
+        print("Obesidade Grau II")
+    else:
+        print("Obesidade Grau III")
+
+peso = float(input('Peso: '))
+altura = float(input('Altura: '))
+
+resultado = IMC(peso,altura)
+print(f'Seu IMC é: {resultado:.2f}')
+bom_ou_ruim(resultado)
