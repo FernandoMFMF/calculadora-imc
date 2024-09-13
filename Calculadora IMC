@@ -1,3 +1,4 @@
+#Este codigo é para calcular o IMC de uma pessoa.
 def IMC(P,A):
     IMC = P / A ** 2
     return IMC
