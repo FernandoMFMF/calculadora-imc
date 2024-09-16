@@ -6,17 +6,17 @@ def IMC(P,A):
 def bom_ou_ruim(IMC):
     if IMC < 16:
         print("Magreza Grau III")
-    elif 16 <= IMC <= 16.9:
+    elif 16 <= IMC <= 16.99:
         print("Magreza Grau II")
-    elif 17 <= IMC <= 18.4:
+    elif 17 <= IMC <= 18.49:
         print("Magreza Grau I")
-    elif 18.5 <= IMC <= 24.9:
+    elif 18.5 <= IMC <= 24.99:
         print("Adequado")
-    elif 25 <= IMC <= 29.9:
+    elif 25 <= IMC <= 29.99:
         print("Pré-Obeso")
-    elif 30 <= IMC <= 34.9:
+    elif 30 <= IMC <= 34.99:
         print("Obesidade Grau I")
-    elif 35 <= IMC <= 39.9:
+    elif 35 <= IMC <= 39.99:
         print("Obesidade Grau II")
     else:
         print("Obesidade Grau III")
